@@ -122,6 +122,8 @@ public class TopCostDrug {
 			e.printStackTrace();
 		}
 		try (BufferedWriter bw = new BufferedWriter(fw)) {
+			bw.write("drug_name,num_prescriber,total_cost");
+			bw.newLine();
 			for(int i=0;i<outputValuesList.size();i++){
 				OutputValues out = outputValuesList.get(i);
 				bw.write(out.getDrug()+","+out.getCount()+","+out.getCost());

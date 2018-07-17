@@ -14,6 +14,6 @@ Approach:
 
 - All these operations are performed in different methods for modularity.
 
-- Comparator interface is used to sort the output values based on cost and drug names.
+- Comparator interface is used to sort the output values based on cost and drug names. The list is sorted in descending order of cost values, if the cost values are same, then it is sorted in ascending order of drug names.
 
 - Data processing is done to handle the additional commas in between the values.
